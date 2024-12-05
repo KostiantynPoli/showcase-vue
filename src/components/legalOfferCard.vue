@@ -23,8 +23,10 @@
       <li class="info">Номер гарячої лінії: {{offer.supportPhone}}</li>
       <li class="info">E-mail служби підтримки: {{offer.supportEmail}}</li>
       <li class="info">Номер ліцензії: {{offer.certificate}}</li>
-      <li class="info">APR (Реальна річна процентна ставка): від <span class="big_font">{{ offer.percentFrom }}</span> %
-        до <span class="big_font">{{ offer.percentTo }}</span> %</li>
+      <li class="info">APR (Реальна річна процентна ставка):
+        <span v-if="offer.percentFrom !== null && offer.percentFrom !== undefined">від
+          <span class="big_font">{{ offer.percentFrom }}</span> %</span>
+         до <span class="big_font">{{ offer.percentTo }}</span> %</li>
       <li class="info">Термін: <span class="big_font"> {{ offer.period }} </span> днів</li>
     </ul>
   </a>
