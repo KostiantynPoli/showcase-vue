@@ -1,4 +1,4 @@
-import {createApp, ref} from 'vue'
+import {createApp} from 'vue'
 import './style.css'
 import App from './App.vue'
 import {domainName, queryParams, urlParams, writeCookies} from "./api/offers.ts";
