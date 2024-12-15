@@ -1,0 +1,56 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "slogan": "Працюємо 24/7",
+      "name": "MoneyGo",
+      "period": 30,
+      "priceFrom": 5000,
+      "priceTo": 30000,
+      "percentFrom": 0.05,
+      "percentTo": 300,
+      "image": "https://napotreby.uno/img/CreditPlus.svg",
+      "characteristic": "https://napotreby.uno/",
+      "warning": "https://youtrack.treeum.net/agiles/106-139/current",
+      "address": "Україна, 01010, м. Київ, площа Арсенальна, будинок 1-Б",
+      "supportPhone": "322333322",
+      "supportEmail": "test@info.lom",
+      "certificate": "booka",
+      "licence": "Ліцензія видана рішенням Нацкомфінпослуг № 998 від 28.05.20xx"
+    },
+    {
+      "id": 2,
+      "slogan": "Працюємо 24/7",
+      "name": "Money To Go",
+      "period": 30,
+      "priceTo": 30000,
+      "percentFrom": 0.05,
+      "percentTo": 300,
+      "image": "https://napotreby.uno/img/CreditPlus.svg",
+      "characteristic": "https://napotreby.uno/",
+      "warning": "https://youtrack.treeum.net/agiles/106-139/current",
+      "address": "м. Київ, вул. Казимира Малевича, 86 літ. Д",
+      "supportPhone": "911333322",
+      "supportEmail": "test@info.bom",
+      "certificate": "booka",
+      "licence": "Ліцензія видана рішенням Нацкомфінпослуг № 997 від 28.05.20xx"
+    },
+    {
+      "id": 1,
+      "slogan": "Працюємо 24/7",
+      "name": "Money Foo Go",
+      "period": 30,
+      "priceFrom": 5000,
+      "priceTo": 30000,
+      "percentTo": 300,
+      "image": "https://napotreby.uno/img/CreditPlus.svg",
+      "characteristic": "https://napotreby.uno/",
+      "warning": "https://youtrack.treeum.net/agiles/106-139/current",
+      "address": "м. Київ, вул. Казимира Малевича, 9 3/4",
+      "supportPhone": "822333322",
+      "supportEmail": "test@info.com",
+      "certificate": "booka",
+      "licence": "Ліцензія видана рішенням Нацкомфінпослуг № 987 від 28.05.20xx"
+    }
+  ]
+}

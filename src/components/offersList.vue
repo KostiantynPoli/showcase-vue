@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import OfferCard from "./offerCard.vue";
-import { offers } from '../main';
 import offerCard from "./offerCard.vue";
+import {getOffers} from "../api/offers.ts";
+
+
 defineOptions({
   components: {
     offerCard
@@ -13,7 +14,7 @@ defineOptions({
 <template>
     <div class="offers">
       <offerCard
-          v-for="offer in offers"
+          v-for="offer in getOffers"
           :key="offer.id"
           :offer="offer"
       />
@@ -25,7 +26,6 @@ defineOptions({
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     grid-gap:20px;
     border-bottom: 1px solid #e5eaef;
   }

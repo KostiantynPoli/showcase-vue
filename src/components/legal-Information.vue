@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import legalOfferCard from "./legalOfferCard.vue";
 import offerCard from "./offerCard.vue";
-import {offers} from "../main.ts";
+import {getOffers} from "../api/offers.ts";
+
 defineOptions({
   components: {
     offerCard
@@ -12,7 +13,7 @@ defineOptions({
 <template>
   <section class="legal-info">
     <legalOfferCard
-      v-for="offer in offers"
+      v-for="offer in getOffers"
       :key="offer.id"
       :offer="offer"
     />

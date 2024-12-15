@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
-import {domainName, getParams, handleClick, renderRDRLink} from "../main.ts";
+import {getParams, handleClick} from "../main.ts";
+import {domainName, renderRDRLink} from "../api/offers.ts";
 
 defineProps({
   offer: {
