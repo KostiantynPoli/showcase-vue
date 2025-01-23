@@ -8,18 +8,28 @@ import {getOffers} from "../api/offers.ts";
     <ul>
       <li v-for="offer in getOffers"
           :key="offer.id">
-        {{offer.name}} - {{offer.licence}}
+        <span class="offer-title">{{offer.name}}</span> - <span>{{offer.license}}</span>
       </li>
     </ul>
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .license-wrapper{
     padding-bottom: 15px;
   }
-  ul>li {
-    text-align: center;
-    margin-bottom: 5px;
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    li {
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: 0.75em;
+      margin-right: 10px;
+      margin-left: 10px;
+      .offer-title {
+        font-weight: 700;
+      }
+    }
   }
 </style>

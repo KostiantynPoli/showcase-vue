@@ -12,16 +12,17 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .for-borrowers{
     padding-bottom: 10px;
     border-bottom: 1px solid #e5eaef;
+    .text {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+    }
+    .text p {
+      margin-bottom: 5px;
+    }
   }
-  .text {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-  }
-  .text p {
-    margin-bottom: 5px;
-  }
+
 </style>

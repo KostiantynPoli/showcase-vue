@@ -14,7 +14,6 @@ defineOptions({
   <section class="legal-info">
     <legalOfferCard
       v-for="offer in getOffers"
-      :key="offer.id"
       :offer="offer"
     />
   </section>

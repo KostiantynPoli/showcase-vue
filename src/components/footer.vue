@@ -8,15 +8,16 @@
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   footer {
+    background-color: $slogan-color;
     padding: 60px 0;
-    background-color: #3f51b5;
     border-top: 1px solid #e5eaef;
     color: #fff;
+    .copyright {
+      text-align: center;
+      margin-top: 10px;
+    }
   }
-  .copyright {
-    text-align: center;
-    margin-top: 10px;
-  }
+  
 </style>

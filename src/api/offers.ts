@@ -19,6 +19,17 @@ import offers from "./offers.json";
 //     }
 // }
 
+// const offer = ref<Offer | null>(null);
+//
+// onMounted(async () => {
+//     try {
+//         const response = await axios.get<Offer>('https://api.example.com/offer');
+//         offer.value = response.data;
+//     } catch (error) {
+//         console.error('Ошибка загрузки:', error);
+//     }
+// });
+
 export const getOffers = offers.offers
 
 
@@ -42,9 +53,9 @@ const defaultParams: DefaultParams = {
     hash: "",
 };
 
-export const domainName: string = 'test_cookie_set'
-const rdrDomain: string = 'go.salesdoubler.net'
-const defaultAid: number = 105674;
+export const domainName: string = import.meta.env.VITE_DOMAIN_NAME || 'test_domain';
+const rdrDomain: string = 'go.salesdoubler.net';
+const defaultAid: number = import.meta.env.VITE_AFFILIATE_ID || 105674;
 
 export const urlParams = new URLSearchParams(window.location.search);
 
